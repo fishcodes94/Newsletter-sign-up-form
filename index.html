@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/570d8b7e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="hiding-div">
+        <div id="newsletter-container">
+          <div id="news-letter-contents">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly update on:</p>
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+
+            <form id="form-info">
+              <div id="input-container">
+                <label for="email">Email address: </label>
+
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="johndoe@uncc.edu"
+                  autocomplete="on"
+                  required
+                />
+              
+              <button>Subscribe to monthly newsletter</button>
+            </div>
+            </form>
+          </div>
+          <div id="newletter-image">
+            <img src="./assets/tech-planet.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="submission-hiding" class="hidden">
+        <div id="submission-container">
+          <h1>Thanks for <br />subscribing!</h1>
+          <p id="submission-post">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button id="dismiss" type="submit">Dismiss message</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

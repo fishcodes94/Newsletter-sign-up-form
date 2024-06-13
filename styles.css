@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: #34495e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-container {
+  background-color: white;
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+#news-letter-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: -30px;
+  font-size: 13px;
+}
+
+#news-letter-contents p {
+  margin-top: -50px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#news-letter-contents h1 {
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+
+#news-letter-contents ul {
+  line-height: 30px;
+  margin-top: 5px;
+  list-style: none;
+  text-align: left;
+}
+
+#news-letter-contents li {
+  background-image: url(./assets/square-check-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em;
+  background-position: 0;
+}
+
+#form-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+#newletter-image img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+#form-info input {
+  margin-bottom: 10px;
+  width: 120%;
+  padding: 10px;
+}
+
+#form-info button {
+  width: 120%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#form-info button:hover {
+  font-size: 15px;
+}
+
+#submission-container {
+  background-color: white;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#submission-container p {
+  margin-left: 25px;
+}
+
+#submission-container button {
+  padding: 15px;
+  width: 90%;
+  margin-top: 40px;
+  color: white;
+  background-color: #1a5276;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#submission-container button:hover {
+  font-size: 20px;
+}
+
+#submission-container h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#input-container {
+  position: relative;
+  width: 80%;
+  margin-top: 30px;
+  line-height: 10px;
+}
+
+#input-container label {
+  position: absolute;
+  top: -20px;
+  left: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #newsletter-container {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  #newletter-image img {
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+
+  #news-letter-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  #form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  #form-info input {
+    margin-bottom: 10px;
+    width: 80vw;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  #form-info button {
+    width: 80vw;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  #news-letter-contents p {
+    text-align: left;
+    margin-left: 4px;
+    margin-bottom: 20px;
+  }
+
+  #news-letter-contents h1 {
+    font-size: 45px;
+    margin-top: 30px;
+    position: static;
+  }
+
+  #news-letter-contents li {
+    background-image: url(./assets/square-check-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 1em 2em;
+    padding-left: 1.3em;
+    background-position: 0;
+  }
+
+  #input-container {
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    line-height: 10px;
+  }
+
+  #input-container label {
+    position: absolute;
+    top: -20px;
+    left: 2px;
+  }
+}
